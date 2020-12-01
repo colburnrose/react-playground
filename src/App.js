@@ -4,6 +4,8 @@ import React, { Component } from "react";
 import Split from "./composition/Split";
 import Tooltip from "./composition/Tooltip";
 import Messages from "./Messages.js";
+import TheDate from "./state/TheDate";
+import Counter from "./state/Counter";
 
 const firstTooltip = (
   <Tooltip color="hotpink" message="tooltip message">
@@ -39,8 +41,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>APPLICATION NAME</h1>
+        <TheDate />
         <Messages name="Messages" unread={0} />
         <Messages name="Notifications" unread={10} />
+        <Counter count={123} />
       </div>
     );
   }
