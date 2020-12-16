@@ -6,6 +6,8 @@ import Tooltip from "./composition/Tooltip";
 import Messages from "./Messages.js";
 import TheDate from "./state/TheDate";
 import Counter from "./state/Counter";
+import HelloWorld from "./state-drills/HelloWorld";
+import Bomb from "./state-drills/Bomb";
 
 const firstTooltip = (
   <Tooltip color="hotpink" message="tooltip message">
@@ -40,11 +42,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <HelloWorld />
         <h1>APPLICATION NAME</h1>
         <TheDate />
         <Messages name="Messages" unread={0} />
         <Messages name="Notifications" unread={10} />
         <Counter count={123} />
+        <Bomb />
       </div>
     );
   }
