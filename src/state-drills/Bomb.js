@@ -11,12 +11,12 @@ class Bomb extends React.Component {
       let counter = this.state.count + 1;
       this.setState({ count: counter });
       if (counter >= 8) {
-        this.setState({ display: "BOOM!" });
+        this.setState({ sound: "BOOM!" });
         this.componentWillUnmount(); // clear the interval
       } else if (counter % 2 === 0) {
-        this.setState({ display: "Tick" });
+        this.setState({ sound: "Tick" });
       } else {
-        this.setState({ display: "Tock" });
+        this.setState({ sound: "Tock" });
       }
     }, 1000);
   }
@@ -28,7 +28,7 @@ class Bomb extends React.Component {
     return (
       <div>
         <h1>Wait for the Bomb to go Booom!</h1>
-        <p>{this.state.display}</p>
+        <p>{this.state.sound}</p>
       </div>
     );
   }
