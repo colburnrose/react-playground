@@ -11,6 +11,7 @@ import Bomb from "./state-drills/Bomb";
 import RouletteGun from "./state-drills/RouletteGun";
 import Tabs from "./state/Tabs";
 import Accordian from "./state-drills/Accordian";
+import DemonymApp from "./demonymapp/demonymApp";
 
 const firstTooltip = (
   <Tooltip color="hotpink" message="tooltip message">
@@ -91,9 +92,10 @@ class App extends Component {
       //   <RouletteGun />
       // </div>
       <div>
-        <Bomb />
+        {/* <Bomb />
         <Tabs tabs={tabsProp} />
-        <Accordian sections={sections} />
+        <Accordian sections={sections} /> */}
+        <DemonymApp />
       </div>
     );
   }
