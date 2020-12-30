@@ -69,7 +69,7 @@ class DemonymApp extends Component {
         {error}
         <CountrySelector
           countries={this.state.countries}
-          changeHandler={(selected) => this.setState(selected)}
+          changeHandler={(selected) => this.setSelected(selected)}
         />
         {demon}
       </div>
