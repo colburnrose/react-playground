@@ -4,11 +4,13 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./paltrows-power-toes/App";
 import AppLang from "./lang-context/AppLang";
+import RegistrationForm from "./registrationForm/registrationForm";
 
 ReactDOM.render(
   <BrowserRouter>
     {/* <App /> */}
-    <AppLang />
+    {/* <AppLang /> */}
+    <RegistrationForm />
   </BrowserRouter>,
   document.getElementById("root")
 );
